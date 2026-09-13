@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Productivity</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/productivity.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="dash-nav">
+    <h2 id="welcome-message">Welcome!</h2>
+    <a href="profile.html" class="profile-link">Profile</a>
+  </header>
+
+  <!-- Feature Menu -->
+  <nav class="feature-nav">
+    <a href="dashboard.html" class="nav-btn active">Productivity Hub</a>
+    <a href="exchange.html" class="nav-btn">Book Exchange</a>
+    <a href="borrow.html" class="nav-btn">Borrow Books</a>
+    <a href="notes.html" class="nav-btn">Note Sharing</a>
+  </nav>
+
+  <main class="dashboard-grid">
+    <!-- Attendance Tracking Section -->
+    <section class="card attendance-card">
+      <h3>Attendance Tracker</h3>
+      <div class="attendance-input">
+        <input type="text" id="subject-name" placeholder="Subject Name">
+        <input type="number" id="attended-classes" placeholder="Attended">
+        <input type="number" id="total-classes" placeholder="Total">
+        <button id="add-attendance-btn">Calculate</button>
+      </div>
+      <div id="attendance-list"></div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section class="card todo-card">
+      <h3>Daily To-Do List</h3>
+      <div class="todo-input">
+        <input type="text" id="task-input" placeholder="Add a new assignment or task...">
+        <button id="add-task-btn">Add</button>
+      </div>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="js/productivity.js"></script>
+</body>
+</html>
