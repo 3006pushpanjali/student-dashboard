@@ -1,0 +1,98 @@
+/* Layout Grid */
+.portal-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Glassmorphism Panel */
+.hub-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.hub-panel h3 {
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.sub-heading {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  color: #FFD60A;
+}
+
+/* Input Fields Container */
+.swap-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.swap-field-group button {
+  background-color: #FFD60A;
+  color: #03045E;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.swap-field-group button:hover {
+  background-color: #90E0EF;
+  transform: translateY(-2px);
+}
+
+/* Action Buttons */
+.loan-action-btn {
+  background-color: #0077B6;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loan-action-btn:hover {
+  background-color: #90E0EF;
+  color: #03045E;
+}
+
+.release-loan-btn {
+  background: transparent;
+  color: #ff5252;
+  border: 1px solid #ff5252;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.release-loan-btn:hover {
+  background-color: #ff5252;
+  color: #ffffff;
+}
+
+/* Secondary Meta Text */
+.peer-note {
+  font-size: 0.85rem;
+  color: #90E0EF;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .portal-layout {
+    grid-template-columns: 1fr;
+  }
+}

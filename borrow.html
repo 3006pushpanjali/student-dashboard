@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Borrow Books</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/productivity.css">
+  <link rel="stylesheet" href="css/book-exchange.css">
+</head>
+<body>
+  <!-- Header matching her dashboard -->
+  <header class="dash-nav">
+    <h2 id="welcome-message">Welcome!</h2>
+    <a href="profile.html" class="profile-link">Profile</a>
+  </header>
+
+  <!-- Feature Navigation -->
+  
+
+ <nav class="feature-nav">
+    <a href="dashboard.html" class="nav-btn">Productivity Hub</a>
+    <a href="exchange.html" class="nav-btn">Book Exchange</a>
+    <a href="borrow.html" class="nav-btn active">Borrow Books</a>
+    <a href="notes.html" class="nav-btn">Note Sharing</a>
+  </nav>
+
+  
+
+  <!-- Main Content Panels -->
+  <main class="portal-layout">
+    
+    <!-- Catalog Section -->
+    <section class="hub-panel">
+      <h3>Campus Lending Library</h3>
+      <div id="catalog-collection"></div>
+    </section>
+
+    <!-- Borrowed Tracker Section -->
+    <section class="hub-panel">
+      <h3>My Active Loans (<span id="total-loan-count">0</span>)</h3>
+      <ul id="active-loans-list"></ul>
+    </section>
+  
+  </main>
+
+<script src="js/borrow.js"></script>
+</body>
+</html>

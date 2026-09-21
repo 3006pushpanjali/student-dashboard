@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Book Exchange & Borrow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/productivity.css">
+  <link rel="stylesheet" href="css/book-exchange.css">
+</head>
+<body>
+  <!-- Header matching her dashboard -->
+  <header class="dash-nav">
+    <h2 id="welcome-message">Welcome!</h2>
+    <a href="profile.html" class="profile-link">Profile</a>
+  </header>
+
+  <!-- Feature Navigation -->
+  <nav class="feature-nav">
+<nav class="feature-nav">
+  <a href="dashboard.html" class="nav-btn">Productivity Hub</a>
+  <a href="exchange.html" class="nav-btn active">Book Exchange</a>
+  <a href="borrow.html" class="nav-btn">Borrow Books</a>
+  <a href="notes.html" class="nav-btn">Note Sharing</a>
+</nav>
+  </nav>
+
+  <!-- Main Content Panels -->
+  <main class="portal-layout">
+    <!-- Panel 1: Peer Book Exchange -->
+    <section class="hub-panel">
+      <h3>Peer Book Exchange</h3>
+      <div class="swap-field-group">
+        <input type="text" id="offered-book-input" placeholder="Title of book you own...">
+        <input type="text" id="requested-book-input" placeholder="Title of book you need in return...">
+        <button id="publish-swap-btn">List Book for Swap</button>
+      </div>
+      <ul id="swap-collection"></ul>
+    </section>
+
+    <!-- Panel 2: Campus Lending Library -->
+    <section class="hub-panel">
+      <h3>Campus Lending Library</h3>
+      <div id="catalog-collection"></div>
+      
+      <h4 class="sub-heading">My Active Book Loans (<span id="total-loan-count">0</span>)</h4>
+      <ul id="active-loans-list"></ul>
+    </section>
+  </main>
+
+ <script src="js/exchange.js"></script>
+</body>
+</html>
